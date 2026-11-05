@@ -24,6 +24,21 @@
 
 # Welcome to your new notebook
 # Type here in the cell editor to add code!
+import pandas as pd
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+# NB_LoadSales: demo notebook
+# Change this comment to create a visible change.
+df = spark.sql("SELECT 1 AS order_id, 'Laptop' AS product, 55000 AS amount")
+display(df)
 
 
 # METADATA ********************
